@@ -1,0 +1,121 @@
+.pagina-habilidades {
+  position: relative;
+  min-height: calc(100vh - 70px);
+  background-color: #eadde7;
+  padding: 70px 60px 100px;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.pagina-habilidades h1 {
+  text-align: center;
+  font-size: 23px;
+  font-weight: normal;
+  margin: 20px 0 75px;
+}
+
+.habilidades {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bloco-habilidades {
+  width: 50%;
+}
+
+.bloco-habilidades h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.caixa-habilidades {
+  background-color: #d9a8c4;
+  min-height: 255px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.caixa-habilidades p {
+  margin: 0 0 7px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.caixa-habilidades p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ESTRELAS */
+
+.estrela {
+  position: absolute;
+  color: #d979b2;
+  line-height: 1;
+}
+
+.estrela-grande-topo {
+  top: 20px;
+  right: 35px;
+  font-size: 65px;
+}
+
+.estrela-esquerda-1 {
+  bottom: 145px;
+  left: 30px;
+  font-size: 30px;
+}
+
+.estrela-esquerda-2 {
+  bottom: 75px;
+  left: 75px;
+  font-size: 18px;
+}
+
+.estrela-esquerda-3 {
+  bottom: 20px;
+  left: 110px;
+  font-size: 25px;
+}
+
+.estrela-direita-1 {
+  bottom: 145px;
+  right: 30px;
+  font-size: 30px;
+}
+
+.estrela-direita-2 {
+  bottom: 75px;
+  right: 75px;
+  font-size: 18px;
+}
+
+.estrela-direita-3 {
+  bottom: 20px;
+  right: 110px;
+  font-size: 25px;
+}
+
+
+@media (max-width: 800px) {
+
+  .pagina-habilidades {
+    padding: 50px 25px 100px;
+  }
+
+  .habilidades {
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .bloco-habilidades {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,232 @@
+/* ================================
+   PÁGINA SOBRE
+================================ */
+
+.pagina-sobre {
+  min-height: calc(100vh - 70px);
+  background-color: #eadce7;
+  padding: 50px 70px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+/* ================================
+   CONTEÚDO PRINCIPAL
+================================ */
+
+.conteudo-sobre {
+  max-width: 1150px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 90px;
+
+  align-items: start;
+}
+
+
+/* ================================
+   LADO ESQUERDO
+================================ */
+
+.lado-esquerdo {
+  text-align: center;
+}
+
+.lado-esquerdo h2,
+.lado-direito h2 {
+  color: #bd6496;
+  font-size: 25px;
+  margin: 0 0 25px;
+  font-weight: bold;
+}
+
+
+/* ================================
+   FOTO
+================================ */
+
+.foto-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ================================
+   CONTATOS
+================================ */
+
+.lado-esquerdo h3 {
+  color: #bd6496;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.caixa-contatos {
+  background-color: #d3a4c2;
+
+  width: 280px;
+  margin: 0 auto;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  text-align: left;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+}
+
+.caixa-contatos p {
+  margin: 0 0 18px;
+}
+
+.caixa-contatos p:last-child {
+  margin-bottom: 0;
+}
+
+.caixa-contatos strong {
+  font-weight: bold;
+}
+
+
+/* ================================
+   LADO DIREITO
+================================ */
+
+.lado-direito {
+  text-align: center;
+}
+
+.lado-direito h2 {
+  margin-bottom: 25px;
+}
+
+
+/* ================================
+   QUEM SOU EU
+================================ */
+
+.caixa-texto-apresentacao {
+  background-color: #d3a4c2;
+
+  padding: 18px 25px;
+
+  margin-bottom: 50px;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+.caixa-texto-apresentacao p {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* ================================
+   BIBLIOGRAFIA
+================================ */
+
+.caixa-texto-bibliografia {
+  background-color: #d3a4c2;
+
+  padding: 20px 30px;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.caixa-texto-bibliografia p {
+  margin: 0 0 22px;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.caixa-texto-bibliografia p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ================================
+   ESTRELAS
+================================ */
+
+.estrela {
+  position: absolute;
+
+  color: #bd6496;
+
+  font-size: 38px;
+}
+
+.estrela-esquerda {
+  bottom: 30px;
+  left: 40px;
+}
+
+.estrela-direita {
+  bottom: 30px;
+  right: 40px;
+}
+
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 900px) {
+
+  .pagina-sobre {
+    padding: 40px 25px;
+  }
+
+  .conteudo-sobre {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .lado-esquerdo,
+  .lado-direito {
+    width: 100%;
+  }
+
+  .caixa-contatos {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .caixa-texto-apresentacao,
+  .caixa-texto-bibliografia {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .estrela {
+    display: none;
+  }
+}
