@@ -1,121 +1,142 @@
 .pagina-habilidades {
   position: relative;
-  min-height: calc(100vh - 70px);
-  background-color: #eadde7;
-  padding: 70px 60px 100px;
-  box-sizing: border-box;
+  min-height: calc(100vh - 78px);
+  background-color: #d9a8c4;
+  padding: 70px 60px;
   overflow: hidden;
-  font-family: Georgia, 'Times New Roman', serif;
 }
+
+/* TÍTULO */
 
 .pagina-habilidades h1 {
   text-align: center;
-  font-size: 23px;
-  font-weight: normal;
-  margin: 20px 0 75px;
-}
-
-.habilidades {
-  display: flex;
-  justify-content: space-between;
-  gap: 100px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.bloco-habilidades {
-  width: 50%;
-}
-
-.bloco-habilidades h2 {
-  text-align: center;
   font-size: 18px;
   font-weight: normal;
-  margin-bottom: 30px;
+  margin: 35px 0 70px;
+  color: #222;
 }
 
+/* CONTEÚDO */
+
+.habilidades-container {
+  width: 850px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+  align-items: start;
+}
+
+/* TÍTULOS DAS COLUNAS */
+
+.coluna h2 {
+  text-align: center;
+  font-size: 17px;
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 28px;
+}
+
+/* CAIXAS */
+
 .caixa-habilidades {
-  background-color: #d9a8c4;
+  background-color: #dda7c4;
+  width: 100%;
   min-height: 255px;
-  padding: 25px;
-  box-sizing: border-box;
+  padding: 20px;
 }
 
 .caixa-habilidades p {
-  margin: 0 0 7px;
-  font-size: 16px;
-  line-height: 1.2;
+  margin: 0 0 6px;
+  font-size: 15px;
+  line-height: 1.25;
+  color: #222;
 }
 
-.caixa-habilidades p:last-child {
-  margin-bottom: 0;
+.caixa-habilidades.tecnica {
+  min-height: 255px;
 }
 
 
-/* ESTRELAS */
+/* ========================= */
+/* ESTRELA GRANDE             */
+/* ========================= */
 
 .estrela {
   position: absolute;
-  color: #d979b2;
-  line-height: 1;
+  color: #dda7c4;
 }
 
-.estrela-grande-topo {
-  top: 20px;
-  right: 35px;
+.estrela-grande {
+  right: 45px;
+  top: 30px;
   font-size: 65px;
 }
 
+
+/* ========================= */
+/* ESTRELAS PEQUENAS - ESQ.  */
+/* ========================= */
+
 .estrela-esquerda-1 {
-  bottom: 145px;
   left: 30px;
-  font-size: 30px;
+  bottom: 155px;
+  font-size: 25px;
 }
 
 .estrela-esquerda-2 {
-  bottom: 75px;
-  left: 75px;
-  font-size: 18px;
+  left: 15px;
+  bottom: 95px;
+  font-size: 19px;
 }
 
 .estrela-esquerda-3 {
-  bottom: 20px;
-  left: 110px;
+  left: 45px;
+  bottom: 55px;
   font-size: 25px;
 }
 
+
+/* ========================= */
+/* ESTRELAS PEQUENAS - DIR.  */
+/* ========================= */
+
 .estrela-direita-1 {
-  bottom: 145px;
   right: 30px;
-  font-size: 30px;
+  bottom: 160px;
+  font-size: 25px;
 }
 
 .estrela-direita-2 {
-  bottom: 75px;
-  right: 75px;
-  font-size: 18px;
+  right: 10px;
+  bottom: 95px;
+  font-size: 19px;
 }
 
 .estrela-direita-3 {
-  bottom: 20px;
-  right: 110px;
+  right: 45px;
+  bottom: 55px;
   font-size: 25px;
 }
 
+
+/* ========================= */
+/* CELULAR / TELA PEQUENA    */
+/* ========================= */
 
 @media (max-width: 800px) {
 
   .pagina-habilidades {
-    padding: 50px 25px 100px;
+    padding: 50px 25px;
   }
 
-  .habilidades {
-    flex-direction: column;
+  .habilidades-container {
+    grid-template-columns: 1fr;
     gap: 45px;
   }
 
-  .bloco-habilidades {
-    width: 100%;
+  .pagina-habilidades h1 {
+    margin-bottom: 50px;
   }
-
 }
